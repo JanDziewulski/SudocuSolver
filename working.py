@@ -26,5 +26,17 @@ def print_board(bo):
 
 """ Creating and filling the sudoku board"""
 
+# def valid(bo, num, pos):
+#     #Check row
+#     for i in range(len(bo[0])):
+
 
 def find_empty(bo):
+
+    for i in range(len(bo)):
+        for j in range(len(bo[0])):
+            if bo[i][j] == 0:
+                return (i, j) #wiersz, kolumna
+        return None
+
+print(find_empty(board))
